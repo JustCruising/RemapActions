@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="current_settings" load_steps=2 format=3 uid="uid://bv8e22gcxq80s"]
+
+[ext_resource type="Script" path="res://resources/current_settings.gd" id="1_3kh3f"]
+
+[resource]
+script = ExtResource("1_3kh3f")
+data = {
+"just_for_this_hide": null,
+"just_for_this_keys": null,
+"just_for_this_show": null
+}

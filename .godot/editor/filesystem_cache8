@@ -1,0 +1,10 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1707758597
+icon.svg::CompressedTexture2D::1753429481855857821::1707756052::1707756066::1::::<><>::
+::res://classes/::1707756329
+remap_button.gd::GDScript::-1::1707759200::0::1::::RemapButton<>Button<>::
+::res://gui/::1707757766
+action_mapping.gd::GDScript::-1::1707759200::0::1::::<>Control<>::
+action_mapping.tscn::PackedScene::2121351737333742317::1707759200::0::1::::<><>::res://gui/action_mapping.gd
+::res://resources/::1707758621
+actionvalues.gd::GDScript::-1::1707759200::0::1::::current_settings<>Resource<>::

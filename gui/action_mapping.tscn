@@ -1,0 +1,84 @@
+[gd_scene load_steps=4 format=3 uid="uid://5humajn3vsob"]
+
+[ext_resource type="Script" path="res://gui/action_mapping.gd" id="1_nur14"]
+[ext_resource type="Script" path="res://resources/current_settings.gd" id="2_sygl0"]
+
+[sub_resource type="Resource" id="Resource_20l1v"]
+script = ExtResource("2_sygl0")
+data = {
+"just_for_this_hide": null,
+"just_for_this_keys": null,
+"just_for_this_show": null
+}
+
+[node name="ActionMapping" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nur14")
+game_settings = SubResource("Resource_20l1v")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -121.5
+offset_right = 121.5
+offset_bottom = 160.0
+grow_horizontal = 2
+
+[node name="SettingsGridContainer" type="GridContainer" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 3
+
+[node name="LabelAction" type="Label" parent="VBoxContainer/SettingsGridContainer"]
+layout_mode = 2
+text = "ACTION"
+
+[node name="VSeparator" type="VSeparator" parent="VBoxContainer/SettingsGridContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="LabelKey" type="Label" parent="VBoxContainer/SettingsGridContainer"]
+layout_mode = 2
+text = "KEY"
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/SettingsGridContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/SettingsGridContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="HSeparator3" type="HSeparator" parent="VBoxContainer/SettingsGridContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "
+
+Use ESCAPE to cancel a key edit
+
+"
+
+[node name="SaveChanges" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "SAVE AND EXIT"
+
+[node name="CancelChanges" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "CANCEL AND EXIT"
+
+[connection signal="pressed" from="VBoxContainer/SaveChanges" to="." method="_on_save_changes_pressed"]
+[connection signal="pressed" from="VBoxContainer/CancelChanges" to="." method="_on_cancel_changes_pressed"]
