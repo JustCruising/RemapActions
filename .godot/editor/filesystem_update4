@@ -1,7 +1,3 @@
-res://gui/action_mapping.tscn
-res://gui/action_mapping.gd
-res://classes/remap_button.gd
-res://resources/actionvalues.gd
-res://resources/current_settings.gd
 res://test_run.tscn
 res://test_run.gd
+res://classes/remap_button.gd

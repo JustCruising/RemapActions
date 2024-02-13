@@ -6,6 +6,7 @@ class_name RemapButton
 @export var active:bool = false
 @export var bind:InputEvent
 
+#						This array holds every key that will be ignored.
 var ignore:Array = [
 	KEY_CTRL,
 	KEY_ALT,
@@ -38,7 +39,7 @@ func _unhandled_input(event):
 	else:
 		if event.keycode == KEY_ESCAPE:
 			button_pressed = false
-		elif not ignore.has(event.keycode):
+		elif not ignore.has(event.keycode):						# Only keys other than ignore and escape.
 			InputMap.action_erase_event(action, event)
 			InputMap.action_add_event(action, event)
 			bind = event
