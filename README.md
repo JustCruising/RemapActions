@@ -7,6 +7,6 @@ Downside 1:  Keys that are used as modifiers (eg Shift, etc) cannot therefore be
 
 Downside 2:  The ESCAPE key is also excluded.
 
-I am not a professional, more of a hobbiest.  I looked at a lot of youtube and other tutorials and the docs before I finally got a small understanding of how the InputMap works.  At the time I was just fiddling around so ..
+I am not a professional, more of a hobbyist.  I looked at a lot of youtube and other tutorials and the docs before I finally got a small understanding of how the InputMap works.  At the time I was just fiddling around so ..
 .. to all the people who did things that helped me understand ..
 .. Thank you and I wish I could remember everyone who put their teachings out there so I could attribute things to you.
